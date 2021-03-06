@@ -45,7 +45,11 @@ label {
   cursor: pointer;
 }
 
-.card {
+input {
+  display: none;
+}
+
+.container {
   height: 100%;
   width: 100%;
 
@@ -58,7 +62,7 @@ label {
   transition: transform 0.6s;
 }
 
-.card div {
+.container div {
   position: absolute;
 
   height: 100%;
@@ -79,14 +83,10 @@ label {
   border-radius: 2rem;
 }
 
-.card .back {
+.container .back {
   transform: rotateY(180deg);
 }
 
-input {
-  display: none;
-}
-
-:checked + .card {
+:checked + .container {
   transform: rotateY(180deg);
 }
